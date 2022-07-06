@@ -1,0 +1,60 @@
+{% extends 'master.html' %}
+{% include 'header.html' %}
+
+{% block title %} Crear Equipo {% endblock %}
+
+{% block body %}
+
+<!-- Solicitamos los datos que se modificarán en el equipo -->
+<div class="container">
+	<form method="post" action="/edit">
+		<table class="table">
+			<tr>
+				<td>ID</td>
+				<td><input type="text" name="id" class="form-control" value="{{ equipo.id }}"></td>
+			</tr>
+			<tr>
+				<td>Nombre equipo</td>
+				<td><input type="text" name="pais" class="form-control" value="{{ equipo.pais }}"></td>
+			</tr>
+
+			<tr>
+				<td>Idioma</td>
+				<td><input type="text" name="idioma" class="form-control" value="{{ equipo.idioma }}"></td>
+			</tr>
+
+			<tr>
+				<td>Continente</td>
+				<td><input type="text" name="continente" class="form-control" value="{{ equipo.continente }}"></td>
+			</tr>
+
+			<tr>
+				<td>Grupo</td>
+				<td><input type="text" name="grupo" class="form-control" value="{{ equipo.grupo }}"></td>
+			</tr>
+
+			<tr>
+				<td>Entrenador</td>
+				<td><input type="text" name="entrenador" class="form-control" value="{{ equipo.entrenador }}"></td>
+			</tr>
+
+			<tr>
+				<td>Capitán</td>
+				<td><input type="text" name="capitan" class="form-control" value="{{ equipo.capitan }}"></td>
+			</tr>
+
+			<tr>
+				<td>Puntaje</td>
+				<td><input type="text" name="puntaje" class="form-control" value="{{ equipo.puntaje }}"></td>
+			</tr>
+
+			<tr>
+				<td colspan="2">
+					<input type="submit" name="submit" value="Actualizar" class="btn btn-warning">
+				</td>
+			</tr>
+		</table>
+	</form>
+</div>
+
+{% endblock %}

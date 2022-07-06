@@ -1,0 +1,9 @@
+drop DATABASE mundial;
+create DATABASE mundial;
+use mundial;
+CREATE TABLE equipo (
+  id int NOT NULL,
+  e_pais varchar(100) NOT NULL,
+  e_grupo varchar(100) NOT NULL,
+  puntos int(100) NOT NULL
+);

@@ -1,0 +1,55 @@
+{% extends 'master.html' %}
+{% include 'header.html' %}
+
+{% block title %} Crear Equipo {% endblock %}
+
+{% block body %}
+
+<div class="container">
+	<form method="post" action="/create-form">
+		<table class="table">
+			<tr>
+				<td>Pais</td>
+				<td><input type="text" name="pais" class="form-control"></td>
+			</tr>
+
+			<tr>
+				<td>Idioma</td>
+				<td><input type="text" name="idioma" class="form-control"></td>
+			</tr>
+
+			<tr>
+				<td>Continente</td>
+				<td><input type="text" name="continente" class="form-control"></td>
+			</tr>
+
+			<tr>
+				<td>Grupo</td>
+				<td><input type="text" name="grupo" class="form-control"></td>
+			</tr>
+
+			<tr>
+				<td>Entrenador</td>
+				<td><input type="text" name="entrenador" class="form-control"></td>
+			</tr>
+
+			<tr>
+				<td>Capitan</td>
+				<td><input type="text" name="capitan" class="form-control"></td>
+			</tr>
+
+			<tr>
+				<td>Puntaje</td>
+				<td><input type="text" name="puntaje" class="form-control"></td>
+			</tr>
+
+			<tr>
+				<td colspan="2">
+					<input type="submit" name="submit" value="Crear Equipo" class="btn btn-success">
+				</td>
+			</tr>
+		</table>
+	</form>
+</div>
+
+{% endblock %}
